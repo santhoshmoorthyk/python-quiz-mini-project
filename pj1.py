@@ -1,7 +1,7 @@
 class admin:
     # def login(self):
         # import mysql.connector
-        # x=mysql.connector.connect(host='localhost',user='root',password='naan dhaan',database='sk')
+        # x=mysql.connector.connect(host='localhost',user='root',password='my password',database='sk')
         # c=x.cursor()    
         # x=input(f'sign up/sign in:').lower()
         # if x=='sign up':
@@ -12,13 +12,13 @@ class admin:
                 
             # r=input('password:')
             
-         # x=mysql.connector.connect(host='localhost',user='root',password='naan dhaan',database='sk')
+         # x=mysql.connector.connect(host='localhost',user='root',password='my password',database='sk')
             # c=x.cursor()
             # c.execute(f'')  
             # q=c.fetchone() 
     def add(self):
         import mysql.connector
-        x=mysql.connector.connect(host='localhost',user='root',password='naan dhaan',database='sk')
+        x=mysql.connector.connect(host='localhost',user='root',password='my password',database='sk')
         c=x.cursor()
         e=input('enter which db to access:')
         y=input('enter question')
@@ -31,7 +31,7 @@ class admin:
 #s.admin()
     def delete(self):
         import mysql.connector
-        x=mysql.connector.connect(host='localhost',user='root',password='naan dhaan',database='sk')
+        x=mysql.connector.connect(host='localhost',user='root',password='my password',database='sk')
         c=x.cursor()
         e=input('enter which db to access:')
         z=input('enter Answer from particular question delete: ')
@@ -41,4 +41,5 @@ class admin:
  
         
         
+
  
