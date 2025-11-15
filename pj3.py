@@ -6,16 +6,16 @@ class main:
         self.h=pj1.admin()
         self.n=pj2.user()
     def o(self):
-        x=mysql.connector.connect(host='localhost',user='root',password='naan dhaan',database='sk')
+        x=mysql.connector.connect(host='localhost',user='root',password='my password',database='sk')
         c=x.cursor()
         m=int(input('enter 1 or 2 for admin or user:'))
         match m:
             case 1:
                 d=input('usercode:')
-                c.execute('select admincode from admin where password="naan dhaan"')
+                c.execute('select admincode from admin where password="my password"')
                 if d==c.fetchone()[0]:
                     f=input('password:') 
-                    c.execute('select password from admin where admincode="santhoshk"')
+                    c.execute('select password from admin where admincode="1234567890"')
                     if f==c.fetchone()[0]:
                         x=int(input('enter 1 or 2 for add or delete:'))
                         match x:
@@ -47,4 +47,5 @@ class main:
                 print('onnum illa')
 k=main()
 k.o()
+
                 
