@@ -7,7 +7,7 @@ class user:
         while z:
             if msvcrt.kbhit() and msvcrt.getch()==b'\x1b':
                 return
-            x=mysql.connector.connect(host='localhost',user='root',password='naan dhaan',database='sk')
+            x=mysql.connector.connect(host='localhost',user='root',password='my password',database='sk')
             c=x.cursor()
             c.execute(f'select no,Q from quiz where no={z} ')  
             q=c.fetchone() 
@@ -38,7 +38,7 @@ class user:
         while z:
             if msvcrt.kbhit() and msvcrt.getch()==b'\x1b':
                 return
-            x=mysql.connector.connect(host='localhost',user='root',password='naan dhaan',database='sk')
+            x=mysql.connector.connect(host='localhost',user='root',password='my password',database='sk')
             c=x.cursor()
             c.execute(f'select no,Q from arithmetic where no={z} ')  
             q=c.fetchone() 
@@ -70,7 +70,7 @@ class user:
         while z:
             if msvcrt.kbhit() and msvcrt.getch()==b'\x1b':
                 return
-            x=mysql.connector.connect(host='localhost',user='root',password='naan dhaan',database='sk')
+            x=mysql.connector.connect(host='localhost',user='root',password='my password',database='sk')
             c=x.cursor()
             c.execute(f'select no,Q from tech where no={z} ')  
             q=c.fetchone() 
@@ -102,7 +102,7 @@ class user:
         while z:
             if msvcrt.kbhit() and msvcrt.getch()==b'\x1b':
                 return
-            x=mysql.connector.connect(host='localhost',user='root',password='naan dhaan',database='sk')
+            x=mysql.connector.connect(host='localhost',user='root',password='my password',database='sk')
             c=x.cursor()
             c.execute(f'select no,Q from tamil where no={z} ')  
             q=c.fetchone() 
@@ -126,3 +126,4 @@ class user:
                 print('not correct')
             z+=1
         print('your score in Tamil:',h)
+
